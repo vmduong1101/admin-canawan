@@ -1,3 +1,5 @@
+@import './../../assets/sass/variable';
+
 .profile {
     display: flex;
     justify-content: center;
@@ -27,13 +29,13 @@
                 }
 
                 h5 {
-                    font-size: 18px;
+                    font-size: $root-title-font-size;
                     margin: 0;
                 }
 
                 p {
                     font-weight: 500;
-                    color: #b5b5c3;
+                    color: $root-grey-color;
                 }
 
             }
@@ -50,7 +52,7 @@
 
                     a {
                         cursor: auto;
-                        color: #b5b5c3;
+                        color: $root-grey-color;
                         text-decoration: none;
                         float: right;
 
@@ -61,7 +63,7 @@
                     a {
                         &:hover {
                             cursor: pointer;
-                            color: #1890ff;
+                            color: $root-primary-color;
                         }
                     }
                 }
@@ -94,14 +96,14 @@
                 padding-bottom: 15px;
 
                 h3 {
-                    font-size: 20px;
+                    font-size: $root-title-font-size;
                     margin-bottom: 0;
                 }
             }
 
             .rightInfor {
                 h3 {
-                    font-size: 20px;
+                    font-size: $root-title-font-size;
                     text-align: center;
                     margin: 20px 0;
                 }

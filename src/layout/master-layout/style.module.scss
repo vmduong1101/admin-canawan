@@ -1,3 +1,5 @@
+@import './../../assets/sass/variable';
+
 .logo {
     cursor: pointer;
     position: relative;
@@ -68,18 +70,18 @@
 
     .title {
         :nth-child(1) {
-            font-size: 20px;
+            font-size: $root-title-font-size;
         }
 
         :nth-child(2) {
             font-size: bold;
             font-weight: normal;
-            font-size: 13px;
+            font-size: $root-font-size;
             margin-left: 10px;
-            color: #b5b5c3;
+            color: $root-grey-color;
 
             &:hover {
-                color: #b5b5c3;
+                color: $root-grey-color;
             }
         }
     }
@@ -88,7 +90,7 @@
         transition: color .2s linear;
 
         &:hover {
-            color: #1890ff;
+            color: $root-primary-color;
         }
     }
 }
@@ -108,14 +110,14 @@
             gap: 10px;
 
             h4 {
-                font-size: 20px;
+                font-size: $root-title-font-size;
                 margin-bottom: 0;
             }
 
             span {
                 line-height: 1.9;
-                color: #b5b5c3;
-                font-size: 13px;
+                color: $root-grey-color;
+                font-size: $root-font-size;
                 margin: 0;
             }
         }
@@ -165,13 +167,13 @@
         }
 
         p {
-            font-size: 13px;
-            color: #b5b5c3;
+            font-size: $root-font-size;
+            color: $root-grey-color;
             margin: 6px 0;
         }
 
         h6 {
-            font-size: 16px;
+            font-size: $root-title-font-size;
         }
 
         .button {
@@ -199,7 +201,7 @@
     .quickMore {
         border-top: 1px dashed #ccc;
         padding-top: 30px;
-        font-size: 13px;
+        font-size: $root-font-size;
 
         .quickMoreItem {
             cursor: pointer;
@@ -214,14 +216,14 @@
                 justify-content: center;
                 background-color: #f3f6f9;
                 color: #6993ff;
-                font-size: 20px;
+                font-size: $root-title-font-size;
                 width: 40px;
                 height: 40px;
                 border-radius: 5px;
             }
 
             h6 {
-                font-size: 13px;
+                font-size: $root-font-size;
 
                 &:hover {
                     color: #6993ff;
