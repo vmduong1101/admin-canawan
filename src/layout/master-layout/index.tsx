@@ -11,8 +11,8 @@ import type { RadioChangeEvent } from 'antd/es/radio';
 import { Layout, Menu, Button, Drawer, Radio, Space } from 'antd';
 import React, { useState } from 'react';
 import style from './style.module.scss';
-import { Outlet } from 'react-router-dom';
-import { faDownload, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link, Outlet } from 'react-router-dom';
+import { faDownload, faXmark, faEnvelopeCircleCheck, faUser, faBarsProgress, faBusinessTime } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { MenuItemInterface } from './interface';
 
@@ -194,7 +194,10 @@ const Layouts: React.FC = () => {
                 <Drawer
                     title={
                         <div className={style.drawer}>
-                            <span>Hello world</span>
+                            <div className={style.title}>
+                                <span>Profile</span>
+                                <span>Create 07 Nov 2022</span>
+                            </div>
                             <FontAwesomeIcon icon={faXmark} fontSize='20px' cursor='pointer' onClick={onClose} />
                         </div>
                     }
@@ -204,9 +207,63 @@ const Layouts: React.FC = () => {
                     onClose={onClose}
                     open={open}
                 >
-                    <p>Some contents...</p>
-                    <p>Some contents...</p>
-                    <p>Some contents...</p>
+                    <div className={style.quick}>
+                        {/* <div className={style.quickProfile}>
+                            <div className={style.quickProfileTitle}>
+                                <h4>Profile</h4>
+                                <span>Create 07 Nov 2022</span>
+                            </div>
+                            <div className={style.close} onClick={handleHidden}>
+                                <IoMdClose />
+                            </div>
+                        </div> */}
+                        <div className={style.quickLogin}>
+                            <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/5/27/1049740/Blackpink-2.jpg" alt="" />
+                            <div >
+                                <h6>Võ Minh Đương</h6>
+                                <p>Marketing</p>
+                                <div className={style.inforEmail}>
+                                    <div className={style.icon}>
+                                        <FontAwesomeIcon icon={faEnvelopeCircleCheck} />
+                                    </div>
+                                    <p>duongvm@canawan.com</p>
+                                </div>
+                                <div className={style.button}>
+                                    <button>Sign out</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={style.quickMore}>
+                            <div className={style.quickMoreItem}>
+                                <div className={style.moreIcon}>
+                                    <FontAwesomeIcon icon={faUser} />
+                                </div>
+                                <div>
+                                    <Link to='/profile'>
+                                        <h6>My Profile</h6>
+                                    </Link>
+                                    <p>Account settings</p>
+                                </div>
+                            </div>
+                            <div className={style.quickMoreItem}>
+                                <div className={style.moreIcon}>
+                                    <FontAwesomeIcon icon={faBarsProgress} />
+                                </div>
+                                <div>
+                                    <h6>My Task</h6>
+                                    <p>Lates task and project</p>
+                                </div>
+                            </div>
+                            <div className={style.quickMoreItem}>
+                                <div className={style.moreIcon}>
+                                    <FontAwesomeIcon icon={faBusinessTime} />
+                                </div>
+                                <div>
+                                    <h6>My Profile</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </Drawer>
             </div>
         </>
