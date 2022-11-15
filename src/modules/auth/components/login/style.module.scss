@@ -1,0 +1,84 @@
+.login {
+    position: relative;
+    background-image: url('https://stg.canawan.com/metronic/assets/media/bg/bg-1.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.loginLogoImg {
+    width: 100px;
+}
+
+.title {
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+    margin: 20px 0 40px 0;
+
+    h2 {
+        color: #ffffff;
+        font-size: 25px;
+    }
+}
+
+.title p {
+    opacity: 0.6;
+}
+
+.loginFormGroup {
+    text-align: center;
+}
+
+.loginForm input {
+    outline: none;
+    padding: 14px 25px;
+    width: 350px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 500;
+    background-color: rgba(33, 33, 33, .28);
+    color: #ffffff;
+    opacity: 0.9;
+
+    &::-webkit-input-placeholder {
+        color: rgb(208, 207, 207);
+    }
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button button {
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    padding: 10px 50px;
+    background-color: transparent;
+    color: #ffffff;
+
+}
+
+.button button:hover {
+    background-color: #d2d6dc;
+    border-color: #d2d6dc;
+    color: #464e5f;
+}
